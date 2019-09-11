@@ -26,6 +26,12 @@ allCatImages.forEach((image) => {
 const headline = document.querySelector('.logo-heading')
 headline.addEventListener('click', function(event){
     headline.style.color = "red"
+    event.stopPropagation();
+})
+
+const navBack = document.querySelector('.logo-heading')
+navBack.addEventListener('click', function(event){
+    navBack.style.background = 'green'
 })
 
 const intro = document.querySelector('.intro-text')
